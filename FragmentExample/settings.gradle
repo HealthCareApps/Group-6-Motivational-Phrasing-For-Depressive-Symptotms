@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+include ':app'
+=======
+include ':app'
+>>>>>>> refs/remotes/origin/master

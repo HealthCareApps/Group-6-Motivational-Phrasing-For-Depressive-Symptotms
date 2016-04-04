@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\erink\AndroidStudioProjects\cardemo\app\libs\unity-classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2f07f600bd717d8e5e311673fb7f82a46afa6bb4">
+        <dex dex="C:\Users\erink\AndroidStudioProjects\cardemo\app\build\intermediates\pre-dexed\debug\unity-classes_d5f673944460803d29cf47d3b88356539104cf39.jar" />
+    </item>
+    <item
+        jar="C:\Users\erink\AndroidStudioProjects\cardemo\app\libs\Vuforia.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9be6fe42a9843737d973096dd26f8250c3db9022">
+        <dex dex="C:\Users\erink\AndroidStudioProjects\cardemo\app\build\intermediates\pre-dexed\debug\Vuforia_f0a76e5ac154d3bc1b584aa17b06b24bf8945344.jar" />
+    </item>
+    <item
+        jar="C:\Users\erink\AndroidStudioProjects\cardemo\app\libs\VuforiaUnityPlayer.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e9653c966030baaf50129735bc7dade4d9a7b952">
+        <dex dex="C:\Users\erink\AndroidStudioProjects\cardemo\app\build\intermediates\pre-dexed\debug\VuforiaUnityPlayer_b3d9692615a8c6e8d19bcdd991725a7963c478ac.jar" />
+    </item>
+
+</items>

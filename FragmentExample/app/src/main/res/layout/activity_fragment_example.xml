@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FragmentExampleActivity"
+    android:background="#9bc4f9">
+
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="edu.fau.knapp.fragmentexample.ToolbarFragment"
+        android:id="@+id/fragment2"
+        tools:layout="@layout/toolbar_fragment"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="edu.fau.knapp.fragmentexample.TextFragment"
+        android:id="@+id/text_fragment"
+        tools:layout="@layout/text_fragment"
+        android:layout_below="@+id/fragment2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Use slidebar to increase text size. Click Change Text to view new text size. Once satisfied with text size click Save. "
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:background="#ffffff"
+        android:layout_below="@+id/text_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+</RelativeLayout>
+
