@@ -1,76 +1,61 @@
 package edu.fau.knapp.group6;
 
 import android.content.Intent;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.View;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.app.Activity;
+import android.widget.ImageButton;
 
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+public class MainActivity extends Activity {
     private static final String TAG = "Main";
+    private ImageButton mcheckButton, mclockButton, muserButton, mlogButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Click listeners for all the buttons
-        View checkButton = findViewById(R.id.check_button);
-        checkButton.setOnClickListener(this);
-        View clockButton = findViewById(R.id.clock_button);
-        clockButton.setOnClickListener(this);
-        View userButton = findViewById(R.id.user_button);
-        userButton.setOnClickListener(this);
-        View logButton = findViewById(R.id.log_button);
-        logButton.setOnClickListener(this);
-    }
+        //View Object references
+        mcheckButton = (ImageButton) findViewById(R.id.check_button);
+        mclockButton = (ImageButton) findViewById(R.id.clock_button);
+        muserButton = (ImageButton) findViewById(R.id.user_button);
+        mlogButton = (ImageButton) findViewById(R.id.log_button);
 
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.check_button:
-                Intent i = new Intent(this, checkYourself.class);
-                startActivity(i);
-                break;
-            case R.id.clock_button:
-                Intent j = new Intent(this, clock.class);
-                startActivity(j);
-                break;
-            case R.id.user_button:
-                Intent k = new Intent(this, users.class);
-                startActivity(k);
-                break;
-            case R.id.log_button:
+        //Button onclick listeners
+
+        mcheckButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, checkYourself.class);
+                startActivity(intent);
+            }
+        });
+
+        mclockButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, alarmClock.class);
+                startActivity(intent);
+            }
+        });
+
+        muserButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, userPreferences.class);
+                startActivity(intent);
+            }
+        });
+
+        mlogButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
-                break;
-
-        }
+            }
+        });
     }
-
-   /* @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemsSelected(MenutItem item){
-        switch (item.getItemId()){
-            case.R.id.settings:
-            startActivity(new Intent(this, Prefs.class));
-            return true;
-        }
-        return false;
-    }*/
 }
 
 

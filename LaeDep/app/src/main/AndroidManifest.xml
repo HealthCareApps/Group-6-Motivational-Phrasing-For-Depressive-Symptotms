@@ -24,15 +24,11 @@
             android:label="Check Yourself">
         </activity>
 
-        <activity android:name=".clock"
-            android:label="Alarm Clock">
+        <activity android:name=".setClock"
+            android:label="Set Alarm">
         </activity>
 
-        <activity android:name=".users"
-            android:label="User Preferences">
-        </activity>
-
-        <activity android:name=".alarmclock"
+        <activity android:name=".alarmClock"
             android:label="Alarm Clock">
         </activity>
 
