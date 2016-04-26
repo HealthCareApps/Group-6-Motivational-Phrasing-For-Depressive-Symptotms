@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.fau.knapp.group6">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".checkYourself"
+            android:label="Check Yourself">
+        </activity>
+
+        <activity android:name=".clock"
+            android:label="Alarm Clock">
+        </activity>
+
+        <activity android:name=".users"
+            android:label="User Preferences">
+        </activity>
+
+        <activity android:name=".alarmclock"
+            android:label="Alarm Clock">
+        </activity>
+
+        <activity android:name=".userPreferences"
+            android:label="User Preferences">
+        </activity>
+
+    </application>
+
+</manifest>

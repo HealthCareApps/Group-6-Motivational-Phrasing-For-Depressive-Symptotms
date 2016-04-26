@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Check Yourself"
+        android:id="@+id/check_yourself_button"
+        android:background="@drawable/checkyourself"
+        android:layout_above="@+id/travel_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Travel Mode"
+        android:id="@+id/travel_button"
+        android:background="@drawable/travelmode"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/check_yourself_button"
+        android:layout_alignStart="@+id/check_yourself_button" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Main Menu"
+        android:id="@+id/main_menu_button"
+        android:background="@drawable/mainmenu"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check Yourself"
+        android:id="@+id/check_text"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/check_yourself_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="#42f9b0"/>
+</RelativeLayout>
