@@ -27,7 +27,7 @@
         android:layout_width="300dip"
         android:layout_height="50dip"
         android:text="Login"
-        android:id="@+id/login"
+        android:id="@+id/login_button"
         android:background="@drawable/loginbutton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -61,8 +61,8 @@
         android:text="Email"
         android:id="@+id/email"
         android:layout_above="@+id/editText2"
-        android:layout_alignLeft="@+id/login"
-        android:layout_alignStart="@+id/login" />
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
 
     <TextView
         android:layout_width="wrap_content"
