@@ -10,3 +10,23 @@
 
 
 To view the layout flow diagram made in Adobe XD please visit the following link: <a href="https://xd.adobe.com/view/967b45af-b2dd-49cb-4dea-e6c653e2e426/">Lae-Dep</a>
+
+TODO
+
+1. Clock/alarm functionality
+	- setTime.java
+	- selectTone.java
+	- repeatSchedule.java
+2. Save preferences functionality
+	- peopleDepo.java
+	- colorRatings.java
+	- setTime.java
+3. Password reset
+	- resetPW.java
+	- reset_pw.xml
+4. Travel Mode functionality
+	- record selected shape/color/font to indicate mood
+	- display motivational message based on score/algorithm
+5. AR functionality
+	- record selected shape/color/font to indicate mood
+	- display motivational message based on score/algorithm
