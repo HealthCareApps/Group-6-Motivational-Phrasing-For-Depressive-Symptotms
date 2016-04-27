@@ -39,28 +39,32 @@
         android:id="@+id/colorRatings"
         android:background="@drawable/colorratings"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
     <ImageButton
         android:layout_width="300dip"
         android:layout_height="50dip"
         android:id="@+id/peopleDepo"
         android:background="@drawable/peopledespoitory"
         android:layout_below="@+id/colorRatings"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/colorRatings"
+        android:layout_alignStart="@+id/colorRatings"
+        android:layout_marginBottom="20dp"/>
     <ImageButton
         android:layout_width="300dip"
         android:layout_height="50dip"
         android:id="@+id/resetPW"
         android:background="@drawable/resetpassword"
-        android:layout_marginBottom="21dp"
         android:layout_above="@+id/mainMenu"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/mainMenu"
+        android:layout_alignStart="@+id/mainMenu"
+        android:layout_marginBottom="20dp" />
     <ImageButton
         android:layout_width="300dip"
         android:layout_height="50dip"
         android:id="@+id/mainMenu"
         android:background="@drawable/mainmenu"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/peopleDepo"
         android:layout_alignStart="@+id/peopleDepo" />

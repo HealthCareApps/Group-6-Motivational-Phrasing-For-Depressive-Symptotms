@@ -14,8 +14,8 @@
     <ImageButton
         android:layout_width="300dip"
         android:layout_height="50dip"
-        android:id="@+id/alarmclock"
-        android:background="@drawable/alarmclock"
+        android:id="@+id/setalarm"
+        android:background="@drawable/setalarm"
         android:layout_marginTop="26dp"
         android:layout_below="@+id/alarmClockText"
         android:layout_centerHorizontal="true" />
@@ -25,10 +25,10 @@
         android:layout_height="50dip"
         android:id="@+id/mainmenu"
         android:background="@drawable/mainmenu"
+        android:layout_marginBottom="47dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/alarmclock"
-        android:layout_alignStart="@+id/alarmclock"
-        android:layout_marginBottom="48dp" />
+        android:layout_alignLeft="@+id/setalarm"
+        android:layout_alignStart="@+id/setalarm" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,5 +51,14 @@
         android:textColor="#f70505"
         android:layout_below="@+id/logoText"
         android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm On/Off"
+        android:id="@+id/alarmswitch"
+        android:layout_above="@+id/mainmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp" />
 
 </RelativeLayout>

@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.Switch;
 
 public class alarmClock extends Activity {
 
-    private ImageButton malarmclock, mmainmenu;
+    private ImageButton msetalarm, mmainmenu;
+    private Switch malarmswitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +19,11 @@ public class alarmClock extends Activity {
         setContentView(R.layout.alarm_clock);
 
         //View object references
-        malarmclock = (ImageButton) findViewById(R.id.alarmclock);
+        msetalarm = (ImageButton) findViewById(R.id.setalarm);
         mmainmenu = (ImageButton) findViewById(R.id.mainmenu);
+        malarmswitch = (Switch) findViewById(R.id.alarmswitch);
 
-        malarmclock.setOnClickListener(new View.OnClickListener() {
+        msetalarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(alarmClock.this, setClock.class);
@@ -32,6 +36,20 @@ public class alarmClock extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(alarmClock.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        malarmswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    //The toggle is enabled
+                    //Turns alarm on
+                }
+                else {
+                    //The toggle is disabled
+                    //Turns alarm off
+                }
             }
         });
     }

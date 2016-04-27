@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
         mlogButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -11,9 +11,21 @@ import android.view.View.OnClickListener;
 
 public class resetPW extends Activity {
 
+    private ImageButton msavepref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reset_pw);
+
+        //View object references
+        msavepref = (ImageButton) findViewById(R.id.savepref);
+
+        msavepref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Save User preferences
+            }
+        });
     }
 }

@@ -11,9 +11,23 @@ import android.view.View.OnClickListener;
 
 public class peopleDepo extends Activity {
 
+    private ImageButton msavepref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.people_depo);
+
+        //View object references
+        msavepref = (ImageButton) findViewById(R.id.savepref);
+
+        msavepref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Save User preferences
+            }
+        });
+
+        //Function to add people to list in people depo
     }
 }

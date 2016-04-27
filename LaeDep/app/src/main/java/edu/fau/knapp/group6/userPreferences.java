@@ -4,8 +4,6 @@ package edu.fau.knapp.group6;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
@@ -22,7 +20,7 @@ public class userPreferences extends Activity  {
         mcolorRatings = (ImageButton) findViewById(R.id.colorRatings);
         mpeopleDepo = (ImageButton) findViewById(R.id.peopleDepo);
         mresetPW = (ImageButton) findViewById(R.id.resetPW);
-        mmainMenu = (ImageButton) findViewById(R.id.mainmenu);
+        mmainMenu = (ImageButton) findViewById(R.id.mainMenu);
 
         //Onclick methods
         mcolorRatings.setOnClickListener(new OnClickListener() {
