@@ -17,7 +17,7 @@ TODO
 	- setTime.java
 	- selectTone.java
 	- repeatSchedule.java
-2. Save preferences functionality
+2. Save user preferences functionality
 	- peopleDepo.java
 	- colorRatings.java
 	- setTime.java
