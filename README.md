@@ -30,3 +30,5 @@ TODO
 5. AR functionality
 	- record selected shape/color/font to indicate mood
 	- display motivational message based on score/algorithm
+6. userPreferences.java
+	- all buttons except main menu button causing app to crash
