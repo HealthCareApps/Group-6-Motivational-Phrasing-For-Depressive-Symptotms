@@ -8,7 +8,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
 
-public class alarmClock extends Activity {
+public class alarmclock extends Activity {
 
     private ImageButton msetalarm, mmainmenu;
     private Switch malarmswitch;
@@ -26,7 +26,7 @@ public class alarmClock extends Activity {
         msetalarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(alarmClock.this, setClock.class);
+                Intent intent = new Intent(alarmclock.this, setClock.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class alarmClock extends Activity {
         mmainmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(alarmClock.this, MainActivity.class);
+                Intent intent = new Intent(alarmclock.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         mclockButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, alarmClock.class);
+                Intent intent = new Intent(MainActivity.this, alarmclock.class);
                 startActivity(intent);
             }
         });
