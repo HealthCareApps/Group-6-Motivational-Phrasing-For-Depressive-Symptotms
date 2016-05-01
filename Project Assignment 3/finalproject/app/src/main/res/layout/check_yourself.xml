@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/aalogo"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lae-Dep"
+        android:id="@+id/logoText"
+        android:layout_marginTop="24dp"
+        android:textColor="#249ce6"
+        android:textSize="32dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Check Yourself"
+        android:id="@+id/check_yourself_button"
+        android:background="@drawable/checkyourself"
+        android:layout_above="@+id/travel_button"
+        android:layout_alignLeft="@+id/travel_button"
+        android:layout_alignStart="@+id/travel_button" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Travel Mode"
+        android:id="@+id/travel_button"
+        android:background="@drawable/travelmode"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:text="Main Menu"
+        android:id="@+id/mainMenu"
+        android:background="@drawable/mainmenu"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check Yourself"
+        android:id="@+id/check_text"
+        android:textColor="#42f9b0"
+        android:layout_below="@+id/logoText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

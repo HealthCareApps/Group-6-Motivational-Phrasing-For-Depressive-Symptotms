@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/aalogo"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lae-Dep"
+        android:id="@+id/logoText"
+        android:layout_marginTop="24dp"
+        android:textColor="#249ce6"
+        android:textSize="32dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Color Ratings"
+        android:id="@+id/colorratetext"
+        android:textColor="#f8c54d"
+        android:layout_below="@+id/logoText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please score the colors below from least favorite (1) to most favorite (5)"
+        android:id="@+id/textView"
+        android:layout_below="@+id/colorratetext"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="40dip"
+        android:id="@+id/red"
+        android:background="@drawable/red"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/logoText"
+        android:layout_toStartOf="@+id/logoText" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="40dip"
+        android:id="@+id/yellow"
+        android:background="@drawable/yellow"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/red"
+        android:layout_alignLeft="@+id/green"
+        android:layout_alignStart="@+id/green" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="40dip"
+        android:id="@+id/green"
+        android:background="@drawable/green"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/yellow"
+        android:layout_alignLeft="@+id/red"
+        android:layout_alignStart="@+id/red" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="40dip"
+        android:id="@+id/blue"
+        android:background="@drawable/blue"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/green"
+        android:layout_alignLeft="@+id/green"
+        android:layout_alignStart="@+id/green" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="40dip"
+        android:id="@+id/purple"
+        android:background="@drawable/purple"
+        android:layout_below="@+id/blue"
+        android:layout_alignLeft="@+id/blue"
+        android:layout_alignStart="@+id/blue" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:id="@+id/savepref"
+        android:background="@drawable/savepreferences"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

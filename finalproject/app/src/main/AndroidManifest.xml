@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.fau.knapp.group6">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".alarmclock"
+            android:label="Alarm Clock">
+        </activity>
+
+        <activity android:name=".checkAR"
+            android:label="Scan Your Mood">
+        </activity>
+
+        <activity android:name=".checkYourself"
+            android:label="Check Yourself">
+        </activity>
+
+        <activity android:name=".colorRatings"
+            android:label="Color Ratings">
+        </activity>
+
+        <activity android:name=".peopleDepo"
+            android:label="People Depository">
+        </activity>
+
+        <activity android:name=".repeatSchedule"
+            android:label="Repeat Schedule">
+        </activity>
+
+        <activity android:name=".resetPW"
+            android:label="Reset Password">
+        </activity>
+
+        <activity android:name=".selectTone"
+            android:label="Select Tone">
+        </activity>
+
+        <activity android:name=".setClock"
+            android:label="Alarm Clock Settings">
+        </activity>
+
+        <activity android:name=".setTime"
+            android:label="Set Alarm Clock">
+        </activity>
+
+        <activity android:name=".travelMode"
+            android:label="Travel Mode">
+        </activity>
+
+        <activity android:name=".userPreferences"
+            android:label="User Preferences">
+        </activity>
+
+    </application>
+
+    <receiver android:name=".Alarm_Receiver"></receiver>
+    <service android:name=".RingTonePlayingService" android:enabled="true"></service>
+</manifest>

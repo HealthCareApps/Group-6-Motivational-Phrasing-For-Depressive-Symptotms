@@ -20,20 +20,48 @@
 
         </activity>
 
+        <activity android:name=".alarmClock"
+            android:label="Alarm Clock">
+        </activity>
+
+        <activity android:name=".checkAR"
+            android:label="Scan Your Mood">
+        </activity>
+
         <activity android:name=".checkYourself"
             android:label="Check Yourself">
         </activity>
 
-        <activity android:name=".clock"
-            android:label="Alarm Clock">
+        <activity android:name=".colorRatings"
+            android:label="Color Ratings">
         </activity>
 
-        <activity android:name=".users"
-            android:label="User Preferences">
+        <activity android:name=".peopleDepo"
+            android:label="People Depository">
         </activity>
 
-        <activity android:name=".alarmclock"
-            android:label="Alarm Clock">
+        <activity android:name=".repeatSchedule"
+            android:label="Repeat Schedule">
+        </activity>
+
+        <activity android:name=".resetPW"
+            android:label="Reset Password">
+        </activity>
+
+        <activity android:name=".selectTone"
+            android:label="Select Tone">
+        </activity>
+
+        <activity android:name=".setClock"
+            android:label="Alarm Clock Settings">
+        </activity>
+
+        <activity android:name=".setTime"
+            android:label="Set Alarm Clock">
+        </activity>
+
+        <activity android:name=".travelMode"
+            android:label="Travel Mode">
         </activity>
 
         <activity android:name=".userPreferences"

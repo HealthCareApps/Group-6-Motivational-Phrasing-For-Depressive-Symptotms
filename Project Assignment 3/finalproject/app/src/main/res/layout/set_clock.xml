@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/aalogo"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lae-Dep"
+        android:id="@+id/logoText"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#249ce6"
+        android:textSize="32dp" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:id="@+id/settime"
+        android:background="@drawable/settime"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:id="@+id/selecttone"
+        android:background="@drawable/tone"
+        android:layout_below="@+id/settime"
+        android:layout_alignLeft="@+id/settime"
+        android:layout_alignStart="@+id/settime" />
+
+    <ImageButton
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:id="@+id/repeatschedule"
+        android:background="@drawable/repeatschedule"
+        android:layout_below="@+id/selecttone"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
